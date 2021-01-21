@@ -85,4 +85,17 @@
         <tag>comments</tag>
       </tags>
   </entry>
+  <entry>
+    <title>测试中文标题的一个发布</title>
+    <url>/2021/01/22/test-a-post-in-chinese-title/</url>
+    <content><![CDATA[<p>仅用来测试中文标题的发布，同时启用评论，是否可以初始化成功。第一次进入post文章详情页面，在底部的评论区，会提示说<code>未找到相关的 Issues 进行评论 请联系 @JianAi-2021 初始化创建</code>，且底部有<code>使用Github登录</code>的按钮。因此，必须使用博主设置的admin用户登录，之后会自动进行issues的初始化。<br>另外发现，在本地测试<code>http://localhost:4000</code>环境中，因为要访问github验证登录，且登录成功后回调地址为博客正式地址，因此必须发布部署后方可验证。<br>无奈，发布部署之后，进行验证中···</p>
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>中文</tag>
+        <tag>试验</tag>
+      </tags>
+  </entry>
 </search>
