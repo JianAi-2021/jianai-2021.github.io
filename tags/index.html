@@ -211,20 +211,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -281,10 +281,10 @@
       
       <div class="post-body"><div class="tag-cloud">
   <div class="tag-cloud-title">
-    目前共计 5 个标签
+    目前共计 7 个标签
   </div>
   <div class="tag-cloud-tags">
-    <a href="/tags/403/" style="font-size: 12px;" class="tag-cloud-0">403</a> <a href="/tags/doc/" style="font-size: 12px;" class="tag-cloud-0">doc</a> <a href="/tags/git/" style="font-size: 12px;" class="tag-cloud-0">git</a> <a href="/tags/hexo/" style="font-size: 12px;" class="tag-cloud-0">hexo</a> <a href="/tags/mac/" style="font-size: 12px;" class="tag-cloud-0">mac</a>
+    <a href="/tags/403/" style="font-size: 12px;" class="tag-cloud-0">403</a> <a href="/tags/demo/" style="font-size: 12px;" class="tag-cloud-0">demo</a> <a href="/tags/doc/" style="font-size: 12px;" class="tag-cloud-0">doc</a> <a href="/tags/git/" style="font-size: 12px;" class="tag-cloud-0">git</a> <a href="/tags/hexo/" style="font-size: 12px;" class="tag-cloud-0">hexo</a> <a href="/tags/mac/" style="font-size: 12px;" class="tag-cloud-0">mac</a> <a href="/tags/mermaid/" style="font-size: 12px;" class="tag-cloud-0">mermaid</a>
   </div>
 </div>
 
@@ -361,6 +361,7 @@
   </footer>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
@@ -370,6 +371,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8.8.4/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
 
   <script>
     NProgress.configure({

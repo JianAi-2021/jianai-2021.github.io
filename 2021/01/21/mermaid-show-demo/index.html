@@ -25,30 +25,34 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="信·戒·惭·愧·闻·布施·智慧">
-<meta property="og:type" content="website">
-<meta property="og:title" content="简Ai 2021">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="Mermaid，就像用Markdown码字一样，高效制作简易流图。NexT主题自带mermaid支持，启用配置即可，如下： 12345# Mermaid tagmermaid:  enable: true  # Available themes: default | dark | forest | neutral  theme: forest 这里主要是强调一下，在第一行mermaid diagr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mermaid使用示例">
+<meta property="og:url" content="http://example.com/2021/01/21/mermaid-show-demo/index.html">
 <meta property="og:site_name" content="简Ai 2021">
-<meta property="og:description" content="信·戒·惭·愧·闻·布施·智慧">
+<meta property="og:description" content="Mermaid，就像用Markdown码字一样，高效制作简易流图。NexT主题自带mermaid支持，启用配置即可，如下： 12345# Mermaid tagmermaid:  enable: true  # Available themes: default | dark | forest | neutral  theme: forest 这里主要是强调一下，在第一行mermaid diagr">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-01-21T15:38:13.000Z">
+<meta property="article:modified_time" content="2021-01-21T15:56:10.346Z">
 <meta property="article:author" content="JianAi-2021">
+<meta property="article:tag" content="mermaid">
+<meta property="article:tag" content="demo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/01/21/mermaid-show-demo/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>简Ai 2021</title>
+<title>mermaid使用示例 | 简Ai 2021</title>
   
 
   <script>
@@ -256,9 +260,10 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
@@ -278,9 +283,9 @@
       <meta itemprop="name" content="简Ai 2021">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/21/mermaid-show-demo/" class="post-title-link" itemprop="url">mermaid使用示例</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          mermaid使用示例
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -304,6 +309,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
         </div>
@@ -313,7 +325,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Mermaid，就像用<code>Markdown</code>码字一样，高效制作简易流图。NexT主题自带mermaid支持，启用配置即可，如下：</p>
+        <p>Mermaid，就像用<code>Markdown</code>码字一样，高效制作简易流图。NexT主题自带mermaid支持，启用配置即可，如下：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Mermaid tag</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">forest</span></span><br></pre></td></tr></table></figure>
 <p>这里主要是<strong>强调</strong>一下，在第一行mermaid diagram具体类型后面，要留一个空行。举一个简单的<code>序列图</code>的例子，编写mermaid语法如下，</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">sequenceDiagram</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">客户-&gt;&gt;银行柜台: 我要存钱  </span></span><br><span class="line"><span class="code">银行柜台-&gt;&gt;后台: 改一下这个账户数字哦  </span></span><br><span class="line"><span class="code">后台-&gt;&gt;银行柜台: 账户的数字改完了，明天起息  </span></span><br><span class="line"><span class="code">银行柜台-&gt;&gt;客户: 好了，给你回单 ，下一位</span></span><br></pre></td></tr></table></figure>
@@ -325,7 +337,6 @@
 后台-&gt;&gt;银行柜台: 账户的数字改完了，明天起息  
 银行柜台-&gt;&gt;客户: 好了，给你回单 ，下一位</code></pre>
 
-      
     </div>
 
     
@@ -333,184 +344,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/mermaid/" rel="tag"># mermaid</a>
+              <a href="/tags/demo/" rel="tag"># demo</a>
+          </div>
 
+        
 
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/20/mac-git-push-403/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="JianAi-2021">
-      <meta itemprop="description" content="信·戒·惭·愧·闻·布施·智慧">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="简Ai 2021">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/20/mac-git-push-403/" class="post-title-link" itemprop="url">Mac Git Push 403</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-01-20 23:19:34" itemprop="dateCreated datePublished" datetime="2021-01-20T23:19:34+08:00">2021-01-20</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-01-21 00:35:21" itemprop="dateModified" datetime="2021-01-21T00:35:21+08:00">2021-01-21</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <blockquote>
-<p>因为创建仓库的时候<code>.git/config</code>文件没有账号密码，只需要在config文件加上账号密码就行了.</p>
-</blockquote>
-<h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h3><ol>
-<li>第一步、 找到.git 文件夹，如果是mac需要在项目文件<strong>按下</strong><code>shift + command + . </code>三个按钮，你将会看到隐藏文件。</li>
-<li>第二步、找到git文件夹内的config文件，找到下面这段代码标橙色的域名。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;github.com&#x2F;J-Boss-Os&#x2F;J-Boss-Tool.git</span><br><span class="line">fetch &#x3D; +refs&#x2F;heads&#x2F;*:refs&#x2F;remotes&#x2F;origin&#x2F;*</span><br><span class="line">[branch &quot;master&quot;]</span><br></pre></td></tr></table></figure></li>
-<li>第三步、 把域名替换成 账户@密码 后保存<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;账户@密码&#x2F;J-Boss-Os&#x2F;J-Boss-Tool.git</span><br><span class="line">fetch &#x3D; +refs&#x2F;heads&#x2F;*:refs&#x2F;remotes&#x2F;origin&#x2F;*</span><br><span class="line">[branch &quot;master&quot;]</span><br></pre></td></tr></table></figure>
-保存关闭编辑器后，重新<code>git push</code>你就会发现不会再报<code>403</code>错误了.</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/20/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="JianAi-2021">
-      <meta itemprop="description" content="信·戒·惭·愧·闻·布施·智慧">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="简Ai 2021">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/01/20/hello-world/" class="post-title-link" itemprop="url">你好，世界</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-01-20 23:03:50" itemprop="dateCreated datePublished" datetime="2021-01-20T23:03:50+08:00">2021-01-20</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-01-21 21:39:27" itemprop="dateModified" datetime="2021-01-21T21:39:27+08:00">2021-01-21</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>欢迎使用<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>！这是你的第一个发布。查看<a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> 获取更多信息. Hexo使用中如果你遇到任何问题，你可以在<a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a>需求帮助，或在<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>向我提问。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新的发布"><a href="#创建一个新的发布" class="headerlink" title="创建一个新的发布"></a>创建一个新的发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>更多信息可参考：<a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>更多信息可参考：<a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>更多信息可参考：<a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>更多信息可参考：<a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/01/20/mac-git-push-403/" rel="prev" title="Mac Git Push 403">
+                  <i class="fa fa-chevron-left"></i> Mac Git Push 403
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -519,6 +368,8 @@
 
 
 
+
+    <div class="comments gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -633,6 +484,25 @@ if (document.querySelectorAll('.mermaid').length) {
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'e31e51e1e21ccf9bb4df',
+      clientSecret: 'dbe55c8dc02ba1036f4b5a72c91e4e62d87fe103',
+      repo        : 'jianai-2021.github.io',
+      owner       : 'JianAi-2021',
+      admin       : ['JianAi-2021'],
+      id          : '7b67faf45d6f84b5c4c2bfff310afb06',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
