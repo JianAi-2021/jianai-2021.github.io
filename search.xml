@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>你好，世界</title>
+    <url>/2021/01/20/hello-world/</url>
+    <content><![CDATA[<p>欢迎使用<a href="https://hexo.io/">Hexo</a>！这是你的第一个发布。查看<a href="https://hexo.io/docs/">documentation</a> 获取更多信息. Hexo使用中如果你遇到任何问题，你可以在<a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a>需求帮助，或在<a href="https://github.com/hexojs/hexo/issues">GitHub</a>向我提问。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新的发布"><a href="#创建一个新的发布" class="headerlink" title="创建一个新的发布"></a>创建一个新的发布</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>更多信息可参考：<a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>更多信息可参考：<a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>更多信息可参考：<a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>更多信息可参考：<a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>doc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac Git Push 403</title>
+    <url>/2021/01/20/mac-git-push-403/</url>
+    <content><![CDATA[<blockquote>
+<p>因为创建仓库的时候<code>.git/config</code>文件没有账号密码，只需要在config文件加上账号密码就行了.</p>
+</blockquote>
+<h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h3><ol>
+<li>第一步、 找到.git 文件夹，如果是mac需要在项目文件<strong>按下</strong><code>shift + command + . </code>三个按钮，你将会看到隐藏文件。</li>
+<li>第二步、找到git文件夹内的config文件，找到下面这段代码标橙色的域名。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;github.com&#x2F;J-Boss-Os&#x2F;J-Boss-Tool.git</span><br><span class="line">fetch &#x3D; +refs&#x2F;heads&#x2F;*:refs&#x2F;remotes&#x2F;origin&#x2F;*</span><br><span class="line">[branch &quot;master&quot;]</span><br></pre></td></tr></table></figure></li>
+<li>第三步、 把域名替换成 账户@密码 后保存<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;账户@密码&#x2F;J-Boss-Os&#x2F;J-Boss-Tool.git</span><br><span class="line">fetch &#x3D; +refs&#x2F;heads&#x2F;*:refs&#x2F;remotes&#x2F;origin&#x2F;*</span><br><span class="line">[branch &quot;master&quot;]</span><br></pre></td></tr></table></figure>
+保存关闭编辑器后，重新<code>git push</code>你就会发现不会再报<code>403</code>错误了.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>mac</tag>
+        <tag>403</tag>
+      </tags>
+  </entry>
+</search>
