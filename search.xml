@@ -3,10 +3,10 @@
   <entry>
     <title>Mac Git Push 403</title>
     <url>/2021/01/20/mac-git-push-403/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<h1 id="Mac使用Git上传403错误"><a href="#Mac使用Git上传403错误" class="headerlink" title="Mac使用Git上传403错误"></a>Mac使用Git上传403错误</h1><blockquote>
 <p>因为创建仓库的时候<code>.git/config</code>文件没有账号密码，只需要在config文件加上账号密码就行了.</p>
 </blockquote>
-<h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h3><ol>
+<h2 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h2><ol>
 <li>第一步、 找到.git 文件夹，如果是mac需要在项目文件<strong>按下</strong><code>shift + command + . </code>三个按钮，你将会看到隐藏文件。</li>
 <li>第二步、找到git文件夹内的config文件，找到下面这段代码标橙色的域名。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;github.com&#x2F;J-Boss-Os&#x2F;J-Boss-Tool.git</span><br><span class="line">fetch &#x3D; +refs&#x2F;heads&#x2F;*:refs&#x2F;remotes&#x2F;origin&#x2F;*</span><br><span class="line">[branch &quot;master&quot;]</span><br></pre></td></tr></table></figure></li>
 <li>第三步、 把域名替换成 账户@密码 后保存<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">url &#x3D; https:&#x2F;&#x2F;账户@密码&#x2F;J-Boss-Os&#x2F;J-Boss-Tool.git</span><br><span class="line">fetch &#x3D; +refs&#x2F;heads&#x2F;*:refs&#x2F;remotes&#x2F;origin&#x2F;*</span><br><span class="line">[branch &quot;master&quot;]</span><br></pre></td></tr></table></figure>
@@ -23,9 +23,9 @@
       </tags>
   </entry>
   <entry>
-    <title>你好，世界</title>
+    <title>Hello world</title>
     <url>/2021/01/20/hello-world/</url>
-    <content><![CDATA[<p>欢迎使用<a href="https://hexo.io/">Hexo</a>！这是你的第一个发布。查看<a href="https://hexo.io/docs/">documentation</a> 获取更多信息. Hexo使用中如果你遇到任何问题，你可以在<a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a>需求帮助，或在<a href="https://github.com/hexojs/hexo/issues">GitHub</a>向我提问。</p>
+    <content><![CDATA[<h1 id="你好，世界"><a href="#你好，世界" class="headerlink" title="你好，世界"></a>你好，世界</h1><p>欢迎使用<a href="https://hexo.io/">Hexo</a>！这是你的第一个发布。查看<a href="https://hexo.io/docs/">documentation</a> 获取更多信息. Hexo使用中如果你遇到任何问题，你可以在<a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a>需求帮助，或在<a href="https://github.com/hexojs/hexo/issues">GitHub</a>向我提问。</p>
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新的发布"><a href="#创建一个新的发布" class="headerlink" title="创建一个新的发布"></a>创建一个新的发布</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>更多信息可参考：<a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -44,11 +44,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Mermaid使用简单示例</title>
+    <title>Mermaid show a simple Demo</title>
     <url>/2021/01/21/mermaid-show-demo/</url>
-    <content><![CDATA[<p>Mermaid，就像用<code>Markdown</code>码字一样，高效制作简易流图。NexT主题自带mermaid支持，启用配置即可，如下：</p>
+    <content><![CDATA[<h1 id="Mermaid简单使用示例"><a href="#Mermaid简单使用示例" class="headerlink" title="Mermaid简单使用示例"></a>Mermaid简单使用示例</h1><p>Mermaid，就像用<code>Markdown</code>码字一样，高效制作简易流图。</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>NexT主题自带mermaid支持，启用配置即可，如下：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Mermaid tag</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">forest</span></span><br></pre></td></tr></table></figure>
-<p>这里主要是<strong>强调</strong>一下，在第一行mermaid diagram具体类型后面，要留一个空行。举一个简单的<code>序列图</code>的例子，编写mermaid语法如下，</p>
+<h2 id="简单示例"><a href="#简单示例" class="headerlink" title="简单示例"></a>简单示例</h2><p>这里主要是<strong>强调</strong>一下，在第一行mermaid diagram具体类型后面，要留一个空行。举一个简单的<code>序列图</code>的例子，编写mermaid语法如下，</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">sequenceDiagram</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">客户-&gt;&gt;银行柜台: 我要存钱  </span></span><br><span class="line"><span class="code">银行柜台-&gt;&gt;后台: 改一下这个账户数字哦  </span></span><br><span class="line"><span class="code">后台-&gt;&gt;银行柜台: 账户的数字改完了，明天起息  </span></span><br><span class="line"><span class="code">银行柜台-&gt;&gt;客户: 好了，给你回单 ，下一位</span></span><br></pre></td></tr></table></figure>
 <p>Mermaid渲染后的效果图如下所示，</p>
 <pre><code class="mermaid">sequenceDiagram
