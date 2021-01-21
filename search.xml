@@ -44,7 +44,7 @@
       </tags>
   </entry>
   <entry>
-    <title>mermaid使用示例</title>
+    <title>Mermaid使用简单示例</title>
     <url>/2021/01/21/mermaid-show-demo/</url>
     <content><![CDATA[<p>Mermaid，就像用<code>Markdown</code>码字一样，高效制作简易流图。NexT主题自带mermaid支持，启用配置即可，如下：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Mermaid tag</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">forest</span></span><br></pre></td></tr></table></figure>
