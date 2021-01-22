@@ -126,4 +126,39 @@
         <tag>财务自由</tag>
       </tags>
   </entry>
+  <entry>
+    <title>现金流游戏，实现财富自由</title>
+    <url>/posts/381e9e43/</url>
+    <content><![CDATA[<p>通过这套游戏，你可以：</p>
+<ol>
+<li>学会正确的投资思考模式，自我修正投资观念，找到实现财务自由的关键；</li>
+<li>模拟真实人生历程，坦然面对变化。学习应对挑战，做出最好的投资以及理财决策；</li>
+<li>开启自己的投资理财天赋，提高财务智商，迈向财务自由；</li>
+<li>传授给你爱的人，让现金流游戏成为创造财务自由的工具。</li>
+</ol>
+<p>富爸爸告诉我们，<strong>穷人</strong>和<strong>富人</strong>的区别之一就在于穷人不知道金钱运动的规律，而富人却非常熟悉。现金流游戏就是通过你的<code>资产负债表</code>和<code>收支平衡表</code>的变化，告诉你金钱运动的规律，可以说，这是每一个想要实现财务自由的人的必修课。</p>
+<h2 id="游戏规则"><a href="#游戏规则" class="headerlink" title="游戏规则"></a>游戏规则</h2><p>现金流游戏共有<strong>两个游戏圈</strong>，一个是我们耳熟能详“<strong>老鼠赛跑</strong>”圈，另一个则是取得财务自由之人所在的快车道。这两种游戏圈其实代表了两种<strong>思维方式</strong>和两种<strong>生活方式</strong>。</p>
+<p>在“老鼠赛跑”圈内人们<strong>为金钱而工作</strong>，每月的支出主要靠<strong>工资</strong>来维持，没有属于自己的资产，或者虽有资产但带来的收入还不足以维持家庭的花费，所以只能在“老鼠赛跑”之中求生存。</p>
+<p>而在<strong>快车道</strong>的人们是已经取得了<code>财务自由</code>的人，他们已经脱离了靠工资维持生活的思维方式，因为他们的收入主要是靠他们f创造的<strong>资产</strong>带来的，他们的经济生活方式只是不断地创造更多的资产。</p>
+<h2 id="获胜方式"><a href="#获胜方式" class="headerlink" title="获胜方式"></a>获胜方式</h2><p>这个游戏的获胜的要求是：在<code>“老鼠赛跑”</code>中尽快获得资产收入，当你的<strong>资产收入</strong>超出你的<strong>总支出</strong>的时候，你就跳出了“老鼠赛跑”的<strong>陷阱</strong>，并进入了<code>快车道</code>，如果你能在快车道实现你的梦想或者月现金流增加五万以上，你就获得了比赛的胜利。</p>
+<pre><code class="mermaid">sequenceDiagram
+
+工资-&gt;&gt;穷人: 主要收入来源
+穷人-&gt;&gt;支出: 大部分钱花掉
+穷人-&gt;&gt;资产: 基本没有资产
+工资-&gt;&gt;富人: 不依赖工作收入
+资产-&gt;&gt;富人: 主要收入来源
+富人-&gt;&gt;资产: 购置更多的资产
+富人-&gt;&gt;支出: 少部分钱花掉，资产收入大于支出</code></pre>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>mermaid</tag>
+        <tag>财务自由</tag>
+        <tag>现金流</tag>
+        <tag>金钱规律</tag>
+      </tags>
+  </entry>
 </search>
