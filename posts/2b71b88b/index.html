@@ -25,22 +25,23 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"jianai-2021.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="仅用来测试中文标题的发布，同时启用评论，是否可以初始化成功。第一次进入post文章详情页面，在底部的评论区，会提示说未找到相关的 Issues 进行评论 请联系 @JianAi-2021 初始化创建，且底部有使用Github登录的按钮。因此，必须使用博主设置的admin用户登录，之后会自动进行issues的初始化。另外发现，在本地测试http:&#x2F;&#x2F;localhost:4000环境中，因为要访问gi">
+<meta name="description" content="Hexo NexT主题提供了gitalk的配置，可以通过授权使用github的某个repo的issues作为评论的载体。启用文章评论，以下为示例post的元信息， 12345678910---title: 评论区github的issues初始化date: 2021-01-22 00:30:31comments: truecategories: 写作tags:    - hexo    - gith">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试中文标题的一个发布">
-<meta property="og:url" content="https://jianai-2021.github.io/2021/01/22/test-a-post-in-chinese-title/index.html">
+<meta property="og:title" content="评论区github的issues初始化">
+<meta property="og:url" content="https://jianai-2021.github.io/posts/2b71b88b/index.html">
 <meta property="og:site_name" content="简Ai 2021">
-<meta property="og:description" content="仅用来测试中文标题的发布，同时启用评论，是否可以初始化成功。第一次进入post文章详情页面，在底部的评论区，会提示说未找到相关的 Issues 进行评论 请联系 @JianAi-2021 初始化创建，且底部有使用Github登录的按钮。因此，必须使用博主设置的admin用户登录，之后会自动进行issues的初始化。另外发现，在本地测试http:&#x2F;&#x2F;localhost:4000环境中，因为要访问gi">
+<meta property="og:description" content="Hexo NexT主题提供了gitalk的配置，可以通过授权使用github的某个repo的issues作为评论的载体。启用文章评论，以下为示例post的元信息， 12345678910---title: 评论区github的issues初始化date: 2021-01-22 00:30:31comments: truecategories: 写作tags:    - hexo    - gith">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-21T16:53:56.000Z">
-<meta property="article:modified_time" content="2021-01-21T17:08:40.170Z">
+<meta property="article:published_time" content="2021-01-21T16:30:31.000Z">
+<meta property="article:modified_time" content="2021-01-22T14:14:32.473Z">
 <meta property="article:author" content="JianAi-2021">
-<meta property="article:tag" content="中文">
-<meta property="article:tag" content="试验">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="comments">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://jianai-2021.github.io/2021/01/22/test-a-post-in-chinese-title/">
+<link rel="canonical" href="https://jianai-2021.github.io/posts/2b71b88b/">
 
 
 <script class="page-configurations">
@@ -52,7 +53,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>测试中文标题的一个发布 | 简Ai 2021</title>
+<title>评论区github的issues初始化 | 简Ai 2021</title>
   
 
   <script>
@@ -186,7 +187,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -199,6 +200,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%84%E8%AE%BA%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">评论配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E7%9A%84%E6%BF%80%E6%B4%BB%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.</span> <span class="nav-text">配置默认的激活评论系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEgitalk"><span class="nav-number">1.2.</span> <span class="nav-text">配置gitalk</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96issues"><span class="nav-number">2.</span> <span class="nav-text">初始化issues</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -273,7 +275,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jianai-2021.github.io/2021/01/22/test-a-post-in-chinese-title/">
+    <link itemprop="mainEntityOfPage" href="https://jianai-2021.github.io/posts/2b71b88b/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -286,7 +288,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          测试中文标题的一个发布
+          评论区github的issues初始化
         </h1>
 
         <div class="post-meta-container">
@@ -298,7 +300,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-01-22 00:53:56 / 修改时间：01:08:40" itemprop="dateCreated datePublished" datetime="2021-01-22T00:53:56+08:00">2021-01-22</time>
+      <time title="创建时间：2021-01-22 00:30:31 / 修改时间：22:14:32" itemprop="dateCreated datePublished" datetime="2021-01-22T00:30:31+08:00">2021-01-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -327,7 +329,17 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>仅用来测试中文标题的发布，同时启用评论，是否可以初始化成功。第一次进入post文章详情页面，在底部的评论区，会提示说<code>未找到相关的 Issues 进行评论 请联系 @JianAi-2021 初始化创建</code>，且底部有<code>使用Github登录</code>的按钮。因此，必须使用博主设置的admin用户登录，之后会自动进行issues的初始化。<br>另外发现，在本地测试<code>http://localhost:4000</code>环境中，因为要访问github验证登录，且登录成功后回调地址为博客正式地址，因此必须发布部署后方可验证。<br>无奈，发布部署之后，进行验证中···<br>经过简单的<code>hexo g -d</code>生成部署之后，使用github管理账户登录，然后打开post详情页，成功完成issues初始化。进一步，进入评论repo的issues，发现也已经创建好了issue。</p>
+        <p>Hexo NexT主题提供了gitalk的配置，可以通过授权使用github的某个repo的issues作为评论的载体。启用文章评论，以下为示例post的元信息，</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 评论区github的issues初始化</span><br><span class="line">date: 2021-01-22 00:30:31</span><br><span class="line">comments: true</span><br><span class="line">categories: 写作</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">    -</span> hexo</span><br><span class="line"><span class="bullet">    -</span> github</span><br><span class="line"><span class="bullet">    -</span> comments</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="评论配置"><a href="#评论配置" class="headerlink" title="评论配置"></a>评论配置</h2><p>在_config.next.yml文件中，启用gitalk的配置如下.</p>
+<h3 id="配置默认的激活评论系统"><a href="#配置默认的激活评论系统" class="headerlink" title="配置默认的激活评论系统"></a>配置默认的激活评论系统</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Multiple Comment System Support</span></span><br><span class="line"><span class="attr">comments:</span></span><br><span class="line">  <span class="comment"># Available values: tabs | buttons</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">tabs</span></span><br><span class="line">  <span class="comment"># Choose a comment system to be displayed by default.</span></span><br><span class="line">  <span class="comment"># Available values: disqus | disqusjs | changyan | livere | gitalk | utterances</span></span><br><span class="line">  <span class="attr">active:</span> <span class="string">gitalk</span></span><br><span class="line">  <span class="comment"># Setting `true` means remembering the comment system selected by the visitor.</span></span><br><span class="line">  <span class="attr">storage:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Lazyload all comment systems.</span></span><br><span class="line">  <span class="attr">lazyload:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="配置gitalk"><a href="#配置gitalk" class="headerlink" title="配置gitalk"></a>配置gitalk</h3><p>以下<code>github_id</code>和<code>repo</code>均为示例说明，实际使用中替换为你的真实的内容。<br><strong>特别说明</strong>：</p>
+<ol>
+<li><code>repo</code>清楚的在注解中说明了为仓库的名字，这里我使用了跟博客同名的仓库。</li>
+<li><code>admin_user</code>为repo的拥有者或协作者，且只有该用户可以初始化issues。</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Gitalk</span></span><br><span class="line"><span class="comment"># For more information: https://gitalk.github.io</span></span><br><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github_id:</span> <span class="string">JianAi-2021</span> <span class="comment"># GitHub repo owner</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">jianai-2021.github.io</span> <span class="comment"># Repository name to store issues</span></span><br><span class="line">  <span class="attr">client_id:</span> <span class="string">your</span> <span class="string">client</span> <span class="string">id</span> <span class="comment"># GitHub Application Client ID</span></span><br><span class="line">  <span class="attr">client_secret:</span> <span class="string">your</span> <span class="string">client</span> <span class="string">secret</span> <span class="comment"># GitHub Application Client Secret</span></span><br><span class="line">  <span class="attr">admin_user:</span> <span class="string">JianAi-2021</span> <span class="comment"># GitHub repo owner and collaborators, only these guys can initialize gitHub issues</span></span><br><span class="line">  <span class="attr">distraction_free_mode:</span> <span class="literal">true</span> <span class="comment"># Facebook-like distraction free mode</span></span><br><span class="line">  <span class="comment"># Gitalk&#x27;s display language depends on user&#x27;s browser or system environment</span></span><br><span class="line">  <span class="comment"># If you want everyone visiting your site to see a uniform language, you can set a force language value</span></span><br><span class="line">  <span class="comment"># Available values: en | es-ES | fr | ru | zh-CN | zh-TW</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure>
+<h2 id="初始化issues"><a href="#初始化issues" class="headerlink" title="初始化issues"></a>初始化issues</h2><p>第一次打开文章详情页，若为非登录用户或者非管理员用户，会提示<code>请联系 @JianAi-2021 初始化创建</code>，此时只要管理员用户<code>@JianAi-2021</code>点击<code>使用Github登录</code>按钮，登录成功后自动完成初始化issues，或者已登录管理员用户进入post文章详情页面也可自动完成初始化issues。</p>
 
     </div>
 
@@ -337,19 +349,23 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"># 中文</a>
-              <a href="/tags/%E8%AF%95%E9%AA%8C/" rel="tag"># 试验</a>
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/github/" rel="tag"># github</a>
+              <a href="/tags/comments/" rel="tag"># comments</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/01/22/comment-github-issues-init/" rel="prev" title="评论区github的issues初始化">
-                  <i class="fa fa-chevron-left"></i> 评论区github的issues初始化
+                <a href="/posts/dc9c21ca/" rel="prev" title="Mermaid show a simple Demo">
+                  <i class="fa fa-chevron-left"></i> Mermaid show a simple Demo
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/posts/9fc44353/" rel="next" title="测试中文标题的一个发布">
+                  测试中文标题的一个发布 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -486,7 +502,7 @@ NexT.utils.loadComments('.gitalk-container', () => {
       repo        : 'jianai-2021.github.io',
       owner       : 'JianAi-2021',
       admin       : ['JianAi-2021'],
-      id          : 'ee29ce610a1e314b07d8885266d78e35',
+      id          : 'a87e68e1ff2e740f021b4f7fae5876a0',
         language: 'zh-CN',
       distractionFreeMode: true
     });
